@@ -5,20 +5,21 @@ x = range(-2, stop=2, length=100)
 y = range(sqrt(2), stop=2, length=100)
 f(x,y) = x * y - x - y + 1
 
-plot(x,y,f,st=:surface,camera=(-30, 30))
+plot(x,y,f,st=:surface)
 
 ##
 plot(rand(3))
-plot!(rand(5),bordercolor=:white,        gridcolor=:white
+plot!(rand(5),bordercolor=:white,        
+gridcolor=:white
 )
 
 ##
-using3D()
+gr()
 x = -1.5:0.1:1.5
 y = -1:0.1:1
 z(x,y) = 3.434
 
-plt = surface(x, y, z, fillcolor=:blue, α=0.8, grid=false, linecolor=:black, edgecolors="k")
+plt = surface(x, y, z, fillcolor=:blue, α=0.8, grid=false, )
 
 
 
