@@ -21,6 +21,17 @@ z(x,y) = 3.434
 
 plt = surface(x, y, z, fillcolor=:blue, α=0.8, grid=false, )
 
+##
+using Plots
+gr()
+f(x,y) = (3x + y^2) * abs(sin(x) + cos(y))
+
+x = 0:0.1:20
+y = 0:0.1:10
+z = [f(i,j) for i in x, j in y]' # この転置を忘れるとデータが矛盾し、グラフが変になるので要注意．
+
+plot(x,y,z, st=:surface, camera=(30,50), ratio=:equal, proj=:"3d")
+
 
 
 ##

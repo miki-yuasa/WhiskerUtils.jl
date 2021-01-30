@@ -1,5 +1,5 @@
 ##
-function plot_surface(x, y, z, M, nM; camera::NTuple{2,Float64}=(-30, 30), plotSlice::Bool=false, saveFig::Bool=false)
+function plotSurface(x, y, z, M, nM; camera::NTuple{2,Float64}=(-30, 30), plotSlice::Bool=false, saveFig::Bool=false)
 
     surface(z, x, y)
     surface!(z, x, -y, 
