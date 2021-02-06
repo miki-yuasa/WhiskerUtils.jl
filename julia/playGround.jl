@@ -28,9 +28,9 @@ f(x,y) = (3x + y^2) * abs(sin(x) + cos(y))
 
 x = 0:0.1:20
 y = 0:0.1:10
-z = [f(i,j) for i in x, j in y]' # この転置を忘れるとデータが矛盾し、グラフが変になるので要注意．
+z = [f(i, j) for i in x, j in y]' # この転置を忘れるとデータが矛盾し、グラフが変になるので要注意．
 
-plot(x,y,z, st=:surface, camera=(30,50), ratio=:equal, proj=:"3d")
+plot(x,y,z, st=:surface, camera=(30, 50), ratio=:equal, proj=:"3d")
 
 
 
@@ -75,5 +75,9 @@ f(x,y) = 3.434
 
 z = f.(x', y)
 fig = surf(x, y, z)
+
+##
+using WhiskerTypes
+a = HydroWhisker(1, 2, 3, 4, 5, 6, 7)
 
 
