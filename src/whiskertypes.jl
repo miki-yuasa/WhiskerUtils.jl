@@ -21,3 +21,5 @@ struct TopoWhisker
     β::Float64
     M::Float64
 end
+
+end
