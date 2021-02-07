@@ -2,3 +2,6 @@ name = "WhiskerUtils"
 uuid = "a1fa9d76-553c-40f5-bbc8-49be8dace0ef"
 authors = ["Mikihisa Yuasa <mikihisa.yuasa@wisc.edu>"]
 version = "0.1.0"
+
+[deps]
+Example = "7876af07-990d-54b4-ab0e-23690620f79a"
