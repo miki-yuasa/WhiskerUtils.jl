@@ -1,0 +1,4 @@
+name = "WhiskerUtils"
+uuid = "a1fa9d76-553c-40f5-bbc8-49be8dace0ef"
+authors = ["Mikihisa Yuasa <mikihisa.yuasa@wisc.edu>"]
+version = "0.1.0"
