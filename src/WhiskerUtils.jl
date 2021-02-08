@@ -1,27 +1,11 @@
 module WhiskerUtils
-
 # Define types
+include("whiskerstructs.jl")
+include("conversions.jl")
 
-struct HydroWhisker
-    λ::Float64
-    γ::Float64
-    Ac::Float64
-    At::Float64
-    ϕ::Float64
-    ϵ::Float64
-    T::Float64
-end 
+using .WhiskerStructs
+using .Conversions
 
-struct TopoWhisker
-    a::Float64
-    b::Float64
-    k::Float64
-    l::Float64
-    α::Float64
-    β::Float64
-    M::Float64
-end
-
-export HydroWhisker, TopoWhisker
+export HydroWhisker, TopoWhisker, hydro2topo
 
 end # module
